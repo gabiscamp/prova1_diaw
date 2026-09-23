@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema</title>
+    <link rel="stylesheet" th:href="@{/}">
+</head>
+<body>
+    <div class="home-container">
+        <div class="home-card">
+            <h2>
+                <form th:action="@{/home}" method="get">
+                    
+                
+                
+            </form>
+
+
+            </h2>
+        </div>
+    </div>
+</body>
+</html>
+
+<select name="cargo" id="" th:submit="@{'/listarCargos'}">
+                    <option value="" th:selected = "${cargoSelecionado == ''}">Todos</option>
+                </select>
+                <button type="submit" class="btn-submit">Filtrar</button>
